@@ -59,8 +59,9 @@ def sort(width: float, height: float, length: float, mass: float) -> str:
 
 # helper to write input and output
 def help_sort(comment:str, width: float, height: float, length: float, mass: float):
-    print(f"called sort with input w (cm) x h (cm) x l (cm): {width} x {height} x {length} and mass (kg): {mass} ")
-    print(f"# {comment} # sort result: {sort(width, height, length, mass)}\n")
+    print(f"{comment} [w (cm) x h (cm) x l (cm), mass (kg)]:"
+          f"\n input: {width} x {height} x {length}, {mass}" 
+          f"\n output: {sort(width, height, length, mass)}\n")
 
 # run sort with various input
 # standard package
